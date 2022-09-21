@@ -4,6 +4,6 @@
 
 @layer base {
     body {
-        @apply dark:bg-gray-800 bg-gray-50
+        @apply dark:bg-gray-900 bg-gray-50
     }
 }

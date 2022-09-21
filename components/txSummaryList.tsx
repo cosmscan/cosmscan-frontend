@@ -73,7 +73,7 @@ const TransactionSummaryList = () => {
       <ul role="list" className="divide-y divide-gray-600">
         {transactions.map((block) => (
           <li key={block.id}>
-            <a href="#" className="block hover:bg-slate-700">
+            <a href="#" className="block hover:bg-slate-900">
               <div className="px-4 py-4 sm:px-6">
                 <div className="flex items-center justify-between">
                   <p className="truncate text-md text-blue-400">{block.txHash.slice(0, 20)}</p>

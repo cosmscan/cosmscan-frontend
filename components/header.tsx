@@ -21,7 +21,7 @@ const menus = [{
 
 const Header = () => {
     return (
-        <Disclosure as="nav" className="bg-gray-800 shadow">
+        <Disclosure as="nav">
             {({ open }) => (
                 <>
                     <div className="mx-auto w-full lg:w-10/12 px-2 sm:px-4 lg:px-8">
