@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { PaperClipIcon } from '@heroicons/react/20/solid'
 import Layout from "../../../components/layout";
+import TransactionSubList from "../../../components/views/transactionSubList";
 
 const ViewBlockPage:NextPage = () => {
     return (
@@ -16,61 +17,33 @@ const ViewBlockPage:NextPage = () => {
                     <div className="px-4 py-5 sm:p-0">
                         <dl>
                             <div className="py-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:py-5 sm:px-6">
-                                <dt className="font-medium text-gray-300">Full name</dt>
-                                <dd className="mt-1 sm:col-span-3 sm:mt-0">Margot Foster</dd>
+                                <dt className="font-medium text-gray-300">Height</dt>
+                                <dd className="mt-1 sm:col-span-3 sm:mt-0">500</dd>
                             </div>
                             <div className="py-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:py-5 sm:px-6">
-                                <dt className="font-medium text-gray-300">Application for</dt>
-                                <dd className="mt-1 sm:col-span-3 sm:mt-0">Backend Developer</dd>
+                                <dt className="font-medium text-gray-300">Block Time</dt>
+                                <dd className="mt-1 sm:col-span-3 sm:mt-0">April, 4 2022 10:24:22</dd>
                             </div>
                             <div className="py-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:py-5 sm:px-6">
-                                <dt className="font-medium text-gray-300">Email address</dt>
-                                <dd className="mt-1 sm:col-span-3 sm:mt-0">margotfoster@example.com</dd>
+                                <dt className="font-medium text-gray-300">Block Hash</dt>
+                                <dd className="mt-1 sm:col-span-3 sm:mt-0">1C919EED21DE4C690592962D6AFC66D63985317F3D254D95EAEEBE94D2F29D46</dd>
                             </div>
                             <div className="py-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:py-5 sm:px-6">
-                                <dt className="font-medium text-gray-300">Salary expectation</dt>
-                                <dd className="mt-1 sm:col-span-3 sm:mt-0">$120,000</dd>
+                                <dt className="font-medium text-gray-300">Previous Block Hash</dt>
+                                <dd className="mt-1 sm:col-span-3 sm:mt-0">1C919EED21DE4C690592962D6AFC66D63985317F3D254D95EAEEBE94D2F29D46</dd>
                             </div>
                             <div className="py-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:py-5 sm:px-6">
-                                <dt className="font-medium text-gray-300">About</dt>
-                                <dd className="mt-1 sm:col-span-3 sm:mt-0">
-                                Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-                                qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-                                pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
-                                </dd>
+                                <dt className="font-medium text-gray-300">Proposer</dt>
+                                <dd className="mt-1 sm:col-span-3 sm:mt-0">cosmosvaloper1n229vhepft6wnkt5tjpwmxdmcnfz55jv3vp77d</dd>
                             </div>
                             <div className="py-4 sm:grid sm:grid-cols-4 sm:gap-4 sm:py-5 sm:px-6">
-                                <dt className="font-medium text-gray-300">Attachments</dt>
-                                <dd className="mt-1 sm:col-span-3 sm:mt-0">
-                                <ul role="list" className="divide-y divide-gray-200 rounded-md border border-gray-200">
-                                    <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                                    <div className="flex w-0 flex-1 items-center">
-                                        <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                                        <span className="ml-2 w-0 flex-1 truncate">resume_back_end_developer.pdf</span>
-                                    </div>
-                                    <div className="ml-4 flex-shrink-0">
-                                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                        Download
-                                        </a>
-                                    </div>
-                                    </li>
-                                    <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                                    <div className="flex w-0 flex-1 items-center">
-                                        <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                                        <span className="ml-2 w-0 flex-1 truncate">coverletter_back_end_developer.pdf</span>
-                                    </div>
-                                    <div className="ml-4 flex-shrink-0">
-                                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                        Download
-                                        </a>
-                                    </div>
-                                    </li>
-                                </ul>
-                                </dd>
+                                <dt className="font-medium text-gray-300">Transactions</dt>
+                                <dd className="mt-1 sm:col-span-3 sm:mt-0">Total 1250</dd>
                             </div>
                         </dl>
                     </div>
                 </div>
+                <TransactionSubList />
             </div>
         </Layout>
     )
