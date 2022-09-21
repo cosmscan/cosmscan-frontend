@@ -22,7 +22,7 @@ const ListBlockPage:NextPage = () => {
                                 <th scope="col" className="px-3 py-3.5 text-left font-semibold">Proposer</th>
                             </tr>
                             </thead>
-                            <tbody className="divide-y divide-gray-500">
+                            <tbody className="divide-y divide-gray-500 bg-gray-700">
                                 <tr key={"1"}>
                                     <td className="whitespace-nowrap py-4 pl-4 pr-3 font-medium sm:pl-6">12141761</td>
                                     <td className="whitespace-nowrap px-3 py-4">647B1266BC9D607EFFD5C0E93C81D7619D3F443D5E9BE703A50C7A76620B1739</td>
