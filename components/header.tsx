@@ -24,16 +24,16 @@ const Header = () => {
         <Disclosure as="nav" className="bg-gray-800 shadow">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+                    <div className="mx-auto w-full lg:w-10/12 px-2 sm:px-4 lg:px-8">
                         <div className="flex h-16 justify-between">
                             <div className="flex px-2 lg:px-0">
                                 <div className="flex flex-shrink-0 items-center">
-                                    <a href="/" className="w-auto text-blue-200">cosmscan</a>
+                                    <a href="/" className="w-auto text-indigo-400 font-bold">Cosmscan</a>
                                 </div>
                                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
                                     {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                                     {menus.map((item) => (
-                                        <a href={item.href} className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-300 hover:border-blue-200 hover:text-white">
+                                        <a href={item.href} className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 font-medium text-gray-300 hover:border-blue-200 hover:text-white">
                                             {item.name}
                                         </a>
                                     ))}
@@ -54,7 +54,7 @@ const Header = () => {
                                         <input
                                             id="search"
                                             name="search"
-                                            className="block w-full rounded-md border border-transparent bg-gray-700 py-2 pl-10 pr-3 leading-5 placeholder-gray-300 focus:border-indigo-500 focus:placeholder-gray-200 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm text-white"
+                                            className="block w-full rounded-md border border-transparent bg-gray-700 py-2 pl-10 pr-3 leading-5 placeholder-gray-300 focus:border-indigo-500 focus:placeholder-gray-200 focus:outline-none focus:ring-1 focus:ring-indigo-500 text-white"
                                             placeholder="Search Block / Transaction / Account"
                                             type="search"
                                         />
@@ -82,7 +82,7 @@ const Header = () => {
                                 <Disclosure.Button
                                     as="a"
                                     href={item.href}
-                                    className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
+                                    className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800"
                                 >
                                     {item.name}
                                 </Disclosure.Button>
