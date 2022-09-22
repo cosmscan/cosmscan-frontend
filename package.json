@@ -8,6 +8,8 @@
   "dependencies": {
     "@headlessui/react": "^1.7.2",
     "@heroicons/react": "^2.0.11",
+    "@tanstack/react-query": "^4.3.9",
+    "@tanstack/react-query-devtools": "^4.3.9",
     "clsx": "^1.2.1",
     "next": "latest",
     "next-themes": "^0.2.1",
