@@ -1,14 +1,22 @@
 import { BASE_URL, Block } from "./types";
 
 type ApiListBlockProps = {
-    chain_id: number;
+    chainId: number;
+    limit: number;
+    offset: number;
 };
 
-const apiListBlock = ({ chain_id }: ApiListBlockProps): Promise<Block[]> => {
-    return fetch(`${BASE_URL}/api/block/list/${chain_id}`)
+const apiListBlock = ({ chainId, limit, offset }: ApiListBlockProps): Promise<Block[]> => {
+    return fetch(`${BASE_URL}/api/block/list/${chainId}?limit=${limit}&offset=${offset}`)
         .then((res) => res.json())
 };
 
+const apiGetBlock = (chainId: number, height: number): Promise<Block> => {
+    return fetch(`${BASE_URL}/api/block/${chainId}/${height}`)
+        .then((res) => res.json())
+}
+
 export {
     apiListBlock,
+    apiGetBlock,
 }

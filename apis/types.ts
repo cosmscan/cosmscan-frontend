@@ -27,6 +27,11 @@ export interface Block {
     inserted_at: string;
 }
 
+export interface ListBlock {
+    total: number;
+    blocks: Block[];
+}
+
 export interface Transaction {
     id: number;
     chain_id: number;
@@ -42,6 +47,11 @@ export interface Transaction {
     gas_used: number;
     tx_timestamp: string;
     inserted_at: string;
+}
+
+export interface ListTransaction {
+    total: number;
+    transactions: Transaction[];
 }
 
 export interface Event {
